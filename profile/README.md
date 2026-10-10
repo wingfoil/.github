@@ -50,7 +50,7 @@ More: [how the repositories relate](https://github.com/wingfoil/.github/blob/mai
 
 ## Transparency
 
-- Every repository here is governed with WingFoil itself: its Memory is public under `docs/`.
+- Every repository listed above is governed with WingFoil itself: its Memory is public under `docs/`.
 - The benchmark is built by WingFoil's maintainer: its rules are fixed before any run, losses are
   published like wins, and every run's record, cost and transcript are public.
 - Security reports: see [SECURITY.md](https://github.com/wingfoil/.github/blob/main/SECURITY.md).
