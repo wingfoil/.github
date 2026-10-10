@@ -15,13 +15,23 @@ npm install -g wingfoil
 wingfoil init --template Scrum
 ```
 
-## Repositories
+## Ecosystem
 
-| Repository | What it is |
-|------------|------------|
-| [**wingfoil**](https://github.com/wingfoil/wingfoil) | The core: CLI + MCP server — Memory, DNA, Directives, Workflows |
-| [**wingfoil-templates**](https://github.com/wingfoil/wingfoil-templates) | Versioned packs of templates, methodologies and directives that WingFoil consumes; first packs not published yet |
-| [**wingfoil-benchmark**](https://github.com/wingfoil/wingfoil-benchmark) | Measures where WingFoil makes a difference, against plain agents and other tools — built by WingFoil's maintainer, with rules fixed before any run and every run public |
+```mermaid
+flowchart LR
+    T["wingfoil-templates<br/>packs"] --> W["wingfoil<br/>CLI + MCP"]
+    W --> Y["your project"]
+    B["wingfoil-benchmark<br/>measurements"] --> W
+    Y -. "feedback notes" .-> W
+```
+
+| Repository | What it is | Latest |
+|------------|------------|--------|
+| [**wingfoil**](https://github.com/wingfoil/wingfoil) | The core: CLI + MCP server — Memory, DNA, Directives, Workflows | [npm 0.2.2](https://www.npmjs.com/package/wingfoil) |
+| [**wingfoil-templates**](https://github.com/wingfoil/wingfoil-templates) | Versioned packs of templates, methodologies and directives that WingFoil consumes | no pack published yet |
+| [**wingfoil-benchmark**](https://github.com/wingfoil/wingfoil-benchmark) | Measures where WingFoil makes a difference, against plain agents and other tools | [v0.1 results](https://wingfoil.github.io/wingfoil-benchmark/c82a5e74885b/2/) |
+
+More: [how the repositories relate](https://github.com/wingfoil/.github/blob/main/docs/ecosystem.md).
 
 ## Resources
 
@@ -29,12 +39,19 @@ wingfoil init --template Scrum
   releases and benchmark results
 - 🤖 [For AI agents](https://github.com/wingfoil/.github/blob/main/docs/for-agents.md) — MCP server
   and the files written for agents
+- 🔁 [Feed back into WingFoil](https://github.com/wingfoil/.github/blob/main/docs/feedback-loop.md) —
+  how a project using WingFoil reports defects and requests, and learns which release answered them
 
 ## Get involved
 
-- 📦 [npm package](https://www.npmjs.com/package/wingfoil)
 - 💬 [Discussions](https://github.com/wingfoil/wingfoil/discussions) — questions and ideas
 - 🐞 [Issues](https://github.com/wingfoil/wingfoil/issues) — bugs and proposals
 - 🤝 [How to contribute](https://github.com/wingfoil/wingfoil/blob/main/COLLABORATION.md) — through Memory, not (only) code
 
-All repositories are MIT licensed.
+## Transparency
+
+- Every repository here is governed with WingFoil itself: its Memory is public under `docs/`.
+- The benchmark is built by WingFoil's maintainer: its rules are fixed before any run, losses are
+  published like wins, and every run's record, cost and transcript are public.
+- Security reports: see [SECURITY.md](https://github.com/wingfoil/.github/blob/main/SECURITY.md).
+- All repositories are MIT licensed.
