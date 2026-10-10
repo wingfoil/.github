@@ -20,9 +20,15 @@ wingfoil init --template Scrum
 | Repository | What it is |
 |------------|------------|
 | [**wingfoil**](https://github.com/wingfoil/wingfoil) | The core: CLI + MCP server — Memory, DNA, Directives, Workflows |
-| [**wingfoil-templates**](https://github.com/wingfoil/wingfoil-templates) | Versioned project templates, methodologies and directives that WingFoil consumes |
-| [**wingfoil-ui**](https://github.com/wingfoil/wingfoil-ui) | Local web UI for WingFoil-governed projects, driving the `wingfoil` CLI |
-| [**wingfoil-benchmark**](https://github.com/wingfoil/wingfoil-benchmark) | Measures where WingFoil makes a difference, against plain agents and other tools |
+| [**wingfoil-templates**](https://github.com/wingfoil/wingfoil-templates) | Versioned packs of templates, methodologies and directives that WingFoil consumes; first packs not published yet |
+| [**wingfoil-benchmark**](https://github.com/wingfoil/wingfoil-benchmark) | Measures where WingFoil makes a difference, against plain agents and other tools — built by WingFoil's maintainer, with rules fixed before any run and every run public |
+
+## Resources
+
+- 📚 [For users](https://github.com/wingfoil/.github/blob/main/docs/resources.md) — packages, guides,
+  releases and benchmark results
+- 🤖 [For AI agents](https://github.com/wingfoil/.github/blob/main/docs/for-agents.md) — MCP server
+  and the files written for agents
 
 ## Get involved
 
