@@ -22,6 +22,7 @@ flowchart LR
     T["wingfoil-templates<br/>packs"] --> W["wingfoil<br/>CLI + MCP"]
     W --> Y["your project"]
     B["wingfoil-benchmark<br/>measurements"] --> W
+    U["wingfoil-ui<br/>local web console"] --> Y
     Y -. "feedback notes" .-> W
 ```
 
@@ -29,6 +30,7 @@ flowchart LR
 |------------|------------|--------|
 | [**wingfoil**](https://github.com/wingfoil/wingfoil) | The core: CLI + MCP server — Memory, DNA, Directives, Workflows | [npm 0.2.2](https://www.npmjs.com/package/wingfoil) |
 | [**wingfoil-templates**](https://github.com/wingfoil/wingfoil-templates) | Versioned packs of templates, methodologies and directives that WingFoil consumes | no pack published yet |
+| [**wingfoil-ui**](https://github.com/wingfoil/wingfoil-ui) | Local web console for WingFoil-governed projects: read a project's Memory, DNA, directives and team in the browser | not on npm; [run from a checkout](https://github.com/wingfoil/wingfoil-ui#install-and-run) |
 | [**wingfoil-benchmark**](https://github.com/wingfoil/wingfoil-benchmark) | Measures where WingFoil makes a difference, against plain agents and other tools | [v0.1 results](https://wingfoil.github.io/wingfoil-benchmark/c82a5e74885b/2/) |
 
 More: [how the repositories relate](https://github.com/wingfoil/.github/blob/main/docs/ecosystem.md).

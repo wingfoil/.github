@@ -15,6 +15,18 @@ Everything the WingFoil projects have published for users, with where to find it
 | Release notes | [CHANGELOG.md](https://github.com/wingfoil/wingfoil/blob/main/CHANGELOG.md) · [GitHub releases](https://github.com/wingfoil/wingfoil/releases) |
 | MCP server listings | [Glama](https://glama.ai/mcp/servers/wingfoil/wingfoil) · [AlternativeTo](https://alternativeto.net/software/wingfoil/) |
 
+## WingFoil UI
+
+A local web console for WingFoil-governed projects: it runs each project's own `wingfoil` CLI and
+shows its Memory, DNA, directives, team and documentation in your browser. It is not published on
+npm: run it from a checkout.
+
+| Resource | Where |
+|---|---|
+| README, requirements, install and run | [README](https://github.com/wingfoil/wingfoil-ui#readme) |
+| User guide | [docs/user-guide.md](https://github.com/wingfoil/wingfoil-ui/blob/main/docs/user-guide.md) |
+| CLI reference | [docs/cli-reference.md](https://github.com/wingfoil/wingfoil-ui/blob/main/docs/cli-reference.md) |
+
 ## WingFoil Benchmark
 
 The benchmark is built by WingFoil's maintainer: questions, metrics and scenarios are fixed before
