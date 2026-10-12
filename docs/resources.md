@@ -18,11 +18,13 @@ Everything the WingFoil projects have published for users, with where to find it
 ## WingFoil UI
 
 A local web console for WingFoil-governed projects: it runs each project's own `wingfoil` CLI and
-shows its Memory, DNA, directives, team and documentation in your browser. It is not published on
-npm: run it from a checkout.
+shows its Memory, DNA, directives, team and documentation in your browser. Latest release: v0.1.0,
+a read-only console, released as a git tag. It is not published on npm: run it from a checkout of
+the tag.
 
 | Resource | Where |
 |---|---|
+| v0.1.0 (git tag) | [tag v0.1.0](https://github.com/wingfoil/wingfoil-ui/tree/v0.1.0) · [CHANGELOG](https://github.com/wingfoil/wingfoil-ui/blob/v0.1.0/CHANGELOG.md) |
 | README, requirements, install and run | [README](https://github.com/wingfoil/wingfoil-ui#readme) |
 | User guide | [docs/user-guide.md](https://github.com/wingfoil/wingfoil-ui/blob/main/docs/user-guide.md) |
 | CLI reference | [docs/cli-reference.md](https://github.com/wingfoil/wingfoil-ui/blob/main/docs/cli-reference.md) |
