@@ -28,10 +28,10 @@ flowchart LR
 
 | Repository | What it is | Latest |
 |------------|------------|--------|
-| [**wingfoil**](https://github.com/wingfoil/wingfoil) | The core: CLI + MCP server — Memory, DNA, Directives, Workflows | [npm 0.2.2](https://www.npmjs.com/package/wingfoil) |
-| [**wingfoil-templates**](https://github.com/wingfoil/wingfoil-templates) | Versioned packs of templates, methodologies and directives that WingFoil consumes | no pack published yet |
-| [**wingfoil-ui**](https://github.com/wingfoil/wingfoil-ui) | Local web console for WingFoil-governed projects: read a project's Memory, DNA, directives and team in the browser | [v0.1.0](https://github.com/wingfoil/wingfoil-ui/tree/v0.1.0) · not on npm, [run from a checkout](https://github.com/wingfoil/wingfoil-ui/tree/v0.1.0#install-and-run) |
-| [**wingfoil-benchmark**](https://github.com/wingfoil/wingfoil-benchmark) | Measures where WingFoil makes a difference, against plain agents and other tools | [v0.1 results](https://wingfoil.github.io/wingfoil-benchmark/c82a5e74885b/2/) |
+| [**wingfoil**](https://github.com/wingfoil/wingfoil) | The core: CLI + MCP server — Memory, DNA, Directives, Workflows | [v0.3.0](https://github.com/wingfoil/wingfoil/releases/tag/v0.3.0) · [npm 0.3.0](https://www.npmjs.com/package/wingfoil) · [docs](https://wingfoil.github.io/wingfoil/) |
+| [**wingfoil-templates**](https://github.com/wingfoil/wingfoil-templates) | Versioned packs of templates, methodologies and directives that WingFoil consumes | [base 1.0.0](https://github.com/wingfoil/wingfoil-templates/blob/main/CATALOG.md) · foundation: base published, software next |
+| [**wingfoil-ui**](https://github.com/wingfoil/wingfoil-ui) | Local web console for WingFoil-governed projects: read a project's Memory, DNA, directives and team in the browser | [v0.2.0](https://github.com/wingfoil/wingfoil-ui/releases/tag/v0.2.0) · [npm 0.2.0](https://www.npmjs.com/package/wingfoil-ui), `npx wingfoil-ui` · works with WingFoil 0.2.x |
+| [**wingfoil-benchmark**](https://github.com/wingfoil/wingfoil-benchmark) | Measures where WingFoil makes a difference, against plain agents and other tools | [v0.2 results](https://wingfoil.github.io/wingfoil-benchmark/81ebb2691f9c/1/) (preliminary; Spec Kit and OpenSpec arms) |
 
 More: [how the repositories relate](https://github.com/wingfoil/.github/blob/main/docs/ecosystem.md).
 
@@ -53,7 +53,8 @@ More: [how the repositories relate](https://github.com/wingfoil/.github/blob/mai
 ## Transparency
 
 - Every repository listed above is governed with WingFoil itself: its Memory is public under `docs/`.
-- The benchmark is built by WingFoil's maintainer: its rules are fixed before any run, losses are
-  published like wins, and every run's record, cost and transcript are public.
+- The benchmark is built and run by WingFoil's maintainer (validity threat T1): its rules are fixed
+  before any run, losses are published like wins, and every run's record, cost and transcript are
+  public.
 - Security reports: see [SECURITY.md](https://github.com/wingfoil/.github/blob/main/SECURITY.md).
 - All repositories are MIT licensed.

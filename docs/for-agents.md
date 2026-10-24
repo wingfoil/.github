@@ -19,5 +19,11 @@ What an AI agent should read to work with WingFoil projects.
 
 ## Pack catalog
 
-Not published yet. A machine-readable index of WingFoil Templates' packs will be listed here when
-the first pack is published.
+WingFoil Templates' published packs (first: `base` 1.0.0, for WingFoil 0.3.0). No released
+WingFoil installs packs yet: an agent adopts a pack by hand, following the *Install and update*
+steps of the pack's README at its tag.
+
+- **Machine-readable index:** [catalog-index.json](https://raw.githubusercontent.com/wingfoil/wingfoil-templates/main/catalog-index.json)
+- **Agent entry point:** [llms.txt](https://raw.githubusercontent.com/wingfoil/wingfoil-templates/main/llms.txt)
+- **Human-readable catalog:** [CATALOG.md](https://github.com/wingfoil/wingfoil-templates/blob/main/CATALOG.md)
+  · [search page](https://wingfoil.github.io/wingfoil-templates/) (follows `main`)
