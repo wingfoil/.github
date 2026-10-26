@@ -14,7 +14,7 @@ Everything the WingFoil projects have published for users, with where to find it
 | CLI reference | [docs/cli-reference.md](https://github.com/wingfoil/wingfoil/blob/main/docs/cli-reference.md) |
 | Examples | [docs/examples/](https://github.com/wingfoil/wingfoil/tree/main/docs/examples) |
 | Release notes, and upgrading a 0.2.x project | [CHANGELOG.md](https://github.com/wingfoil/wingfoil/blob/main/CHANGELOG.md) · [release v0.3.0](https://github.com/wingfoil/wingfoil/releases/tag/v0.3.0) (test results and coverage attached) · [GitHub releases](https://github.com/wingfoil/wingfoil/releases) |
-| MCP server listings | [Glama](https://glama.ai/mcp/servers/wingfoil/wingfoil) · [AlternativeTo](https://alternativeto.net/software/wingfoil/) |
+| MCP server listings | [official MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers?search=wingfoil) (`io.github.wingfoil/wingfoil` 0.3.0) · [Glama](https://glama.ai/mcp/servers/wingfoil/wingfoil) · [AlternativeTo](https://alternativeto.net/software/wingfoil/) |
 
 ## WingFoil UI
 
@@ -44,8 +44,14 @@ once per arm, only S1 three times). It compares a plain agent and WingFoil v0.3.
 v1.1.0 and OpenSpec 1.14.0 arms, set up from their official documentation under the same rules as
 WingFoil.
 
+A first comparison across agents: the baseline arm (a plain agent, no harness) on OpenAI's Codex
+CLI 0.162.1 with three OpenAI models, compared with the Claude Code baseline of v0.2's reference
+campaign, on its own page and never mixed with the Claude Code results. Preliminary (every group
+ran once, S1 three times); its costs are API-equivalent, from a pinned price table.
+
 | Resource | Where |
 |---|---|
+| Codex baseline, across agents (preliminary) | [results site, *Across agents*](https://wingfoil.github.io/wingfoil-benchmark/) |
 | v0.2 results (preliminary) | [reference campaign, WingFoil v0.3.0](https://wingfoil.github.io/wingfoil-benchmark/81ebb2691f9c/1/) · [bridge campaign, WingFoil v0.2.2](https://wingfoil.github.io/wingfoil-benchmark/bf3a1ac7dff5/1/) · [all results](https://wingfoil.github.io/wingfoil-benchmark/) |
 | Method: every rule and its limits | [method page](https://wingfoil.github.io/wingfoil-benchmark/81ebb2691f9c/1/method.html) |
 | v0.2 release notes | [docs/releases/v0.2.md](https://github.com/wingfoil/wingfoil-benchmark/blob/main/docs/releases/v0.2.md) · [release v0.2](https://github.com/wingfoil/wingfoil-benchmark/releases/tag/v0.2) (with errata) · agent transcripts attached to each campaign's release |

@@ -8,7 +8,9 @@ What an AI agent should read to work with WingFoil projects.
 - **Guide for agents:** [docs/agents.md](https://github.com/wingfoil/wingfoil/blob/main/docs/agents.md)
   — what WingFoil is, how to read a WingFoil project and how to change it without breaking its
   rules. It describes `main`; read it at the tag matching `wingfoil --version`.
-- **MCP server** (stdio, read-only, ships in the `wingfoil` npm package). For Claude Code, at the
+- **MCP server** (stdio, read-only, ships in the `wingfoil` npm package; listed on the
+  [official MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers?search=wingfoil)
+  as `io.github.wingfoil/wingfoil`). For Claude Code, at the
   repository root:
 
   ```json
