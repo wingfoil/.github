@@ -7,9 +7,10 @@ into WingFoil today, and any project can adopt it.
 [Back to the organization](https://github.com/wingfoil).
 
 > **Status: early.** The loop runs by hand, at WingFoil's release retrospectives; no CLI command
-> automates it yet. The format below is in use by the WingFoil projects; when
-> [COLLABORATION.md](https://github.com/wingfoil/wingfoil/blob/main/COLLABORATION.md) documents it,
-> that file is the reference and this page will point to it.
+> automates it yet. The reference is the *Consumer feedback* section of WingFoil's
+> [COLLABORATION.md](https://github.com/wingfoil/wingfoil/blob/main/COLLABORATION.md#consumer-feedback--notes-from-projects-that-use-wingfoil)
+> (since v0.3.1): inbox, note format, sync points and sync procedure. This page summarises it; where
+> they differ, COLLABORATION.md wins.
 
 ```mermaid
 flowchart LR
@@ -21,12 +22,14 @@ flowchart LR
 
 ## 1. Keep an inbox in your repository
 
-Create `docs/wingfoil-feedback/`, committed on your default branch, with:
+Create `docs/wingfoil-feedback/`, committed on your `main` (notes not on `main` are not read), with:
 
-- a `README.md` with the rules of the inbox, a ledger table of the notes (note, title, kind,
-  status, answered by), the **source key** WingFoil assigned to your repository, and the date of
-  the last sync;
-- **one file per note**, `F-<nnn>-<slug>.md`, never deleted and never renumbered.
+- a `README.md`: it must exist, because WingFoil's registration reads it; its content is yours. The
+  WingFoil projects keep there the rules of the inbox, a ledger table of the notes (note, title,
+  kind, status, answered by), the **source key** WingFoil assigned to the repository, and the date
+  of the last sync;
+- **one file per note**, `F-<nnn>-<slug>.md` (three digits or more, unique in the inbox), never
+  deleted and never renumbered: one identifier, one status, one history.
 
 A note's frontmatter has exactly these six fields:
 
@@ -44,8 +47,12 @@ answered_by: []      # the WingFoil element ids, filled at sync
 The body says what was **observed** and what was **expected**, reproducible with WingFoil alone:
 the command, its output, the WingFoil version and the commit.
 
-Your project writes `open`. Every other status, and `answered_by`, is set only when you sync, from
-what WingFoil has published, never by judgement.
+Your project writes `open`, and `duplicate` for a note that repeats another note of the same inbox.
+Every other status, and `answered_by`, is set only when you sync, from what WingFoil has published,
+never by judgement: `needs-info` (WingFoil asked for what a reproduction needs; you answer in the
+note), `captured` (WingFoil named an element that answers it), `resolved` (every element in
+`answered_by` has shipped in a release you read, or the build already behaves as the note asks),
+`declined`.
 
 ## 2. Give your agents a directive
 
@@ -71,17 +78,24 @@ human or agent role follows the same rules:
   self-contained element (a bug, a decision-log, …), with the facts reproduced in its repository; a
   defect is reproduced before it becomes an element. The element cites your note only as
   `<source key>/F-<nnn>@<sha>`.
-- **When.** Notes are read at WingFoil's release retrospective. Urgent fixes and documentation may
-  be taken into a patch release earlier; anything that changes a release's scope waits for the
-  retrospective.
-- **Where the answer is.** In WingFoil's `main` branch, its release tags and its npm dist-tags:
-  that is what your sync reads.
+- **When.** WingFoil reads every registered inbox at each minor release's retrospective; a patch
+  release has none. A note answered earlier by a patch appears only in that patch's release
+  document.
+- **Where the answer is.** In WingFoil's `origin/main` (the retrospectives and the elements), its
+  release tags (`vX.Y.Z` on `main` for a minor, a patch's tag on its `release/X.Y` branch) and its
+  npm dist-tags (`latest`, and `latest-X.Y` for a patch of an older line): that is what your sync
+  reads.
+- **When you sync.** At your own release planning, before you fix its scope, and at every pin bump.
+  The steps (which records to read, how each WingFoil decision maps to a note's status) are in
+  COLLABORATION.md's *The sync procedure*.
 
 ## 4. Get your inbox read
 
-Your repository must be public, and WingFoil must register it as a feedback source; that gives you
-your source key. Registration is done by a maintainer, by hand, for now: ask in
-[Discussions](https://github.com/wingfoil/wingfoil/discussions) with the URL of your inbox.
+Your repository must be public, and WingFoil must register it as a feedback source (an `active`
+service whose feedback inbox names your folder); the service's id is your source key. A maintainer
+registers it by hand, after your inbox is committed: ask through the **Proposal** issue form
+of [WingFoil's issues](https://github.com/wingfoil/wingfoil/issues), naming your repository and
+your inbox. Until it is registered, your feedback goes through the issue forms like anyone else's.
 
 For a single defect or idea you do not need an inbox: open an
 [issue](https://github.com/wingfoil/wingfoil/issues) — see

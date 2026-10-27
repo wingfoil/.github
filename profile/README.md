@@ -28,10 +28,10 @@ flowchart LR
 
 | Repository | What it is | Latest |
 |------------|------------|--------|
-| [**wingfoil**](https://github.com/wingfoil/wingfoil) | The core: CLI + MCP server — Memory, DNA, Directives, Workflows | [v0.3.0](https://github.com/wingfoil/wingfoil/releases/tag/v0.3.0) · [npm 0.3.0](https://www.npmjs.com/package/wingfoil) · [docs](https://wingfoil.github.io/wingfoil/) |
-| [**wingfoil-templates**](https://github.com/wingfoil/wingfoil-templates) | Versioned packs of templates, methodologies and directives that WingFoil consumes | [base 1.0.0](https://github.com/wingfoil/wingfoil-templates/blob/main/CATALOG.md) · foundation: base published, software next |
+| [**wingfoil**](https://github.com/wingfoil/wingfoil) | The core: CLI + MCP server — Memory, DNA, Directives, Workflows | [v0.3.1](https://github.com/wingfoil/wingfoil/releases/tag/v0.3.1) · [npm 0.3.1](https://www.npmjs.com/package/wingfoil) · [docs](https://wingfoil.github.io/wingfoil/) |
+| [**wingfoil-templates**](https://github.com/wingfoil/wingfoil-templates) | Versioned packs of templates, methodologies and directives that WingFoil consumes | [base 2.0.0](https://github.com/wingfoil/wingfoil-templates/blob/main/CATALOG.md#pack-base) · foundation: base published, software next |
 | [**wingfoil-ui**](https://github.com/wingfoil/wingfoil-ui) | Local web console for WingFoil-governed projects: read a project's Memory, DNA, directives and team in the browser | [v0.2.0](https://github.com/wingfoil/wingfoil-ui/releases/tag/v0.2.0) · [npm 0.2.0](https://www.npmjs.com/package/wingfoil-ui), `npx wingfoil-ui` · works with WingFoil 0.2.x |
-| [**wingfoil-benchmark**](https://github.com/wingfoil/wingfoil-benchmark) | Measures where WingFoil makes a difference, against plain agents and other tools | [v0.2 results](https://wingfoil.github.io/wingfoil-benchmark/81ebb2691f9c/1/) (preliminary; Spec Kit and OpenSpec arms) · [Codex baseline, across agents](https://wingfoil.github.io/wingfoil-benchmark/) (preliminary) |
+| [**wingfoil-benchmark**](https://github.com/wingfoil/wingfoil-benchmark) | Measures where WingFoil makes a difference, against plain agents and other tools | [v0.2 results](https://wingfoil.github.io/wingfoil-benchmark/81ebb2691f9c/1/) (preliminary; Spec Kit and OpenSpec arms) · [Codex baseline, across agents](https://wingfoil.github.io/wingfoil-benchmark/) (preliminary) · [Codex execution 13fda3099afa/1](https://wingfoil.github.io/wingfoil-benchmark/13fda3099afa/1/) (with an erratum: its WingFoil arm is being rerun) |
 
 More: [how the repositories relate](https://github.com/wingfoil/.github/blob/main/docs/ecosystem.md).
 

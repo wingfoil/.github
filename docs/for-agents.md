@@ -21,7 +21,7 @@ What an AI agent should read to work with WingFoil projects.
 
 ## Pack catalog
 
-WingFoil Templates' published packs (first: `base` 1.0.0, for WingFoil 0.3.0). No released
+WingFoil Templates' published packs (latest: `base` 2.0.0, for WingFoil 0.3.0). No released
 WingFoil installs packs yet: an agent adopts a pack by hand, following the *Install and update*
 steps of the pack's README at its tag.
 
