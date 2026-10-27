@@ -58,8 +58,7 @@ ran once, S1 three times); its costs are API-equivalent, from a pinned price tab
 Codex execution `13fda3099afa/1`: WingFoil against its docs control and the baseline, on
 gpt-5.6-terra. **Erratum:** in 12 of the WingFoil arm's 27 steps, the turn after the approver's
 reply ran on Codex's default model instead of Terra (fixed). The WingFoil arm is being rerun; the
-baseline arms are unaffected. Its costs are API-equivalent, from a price table: the runs used a
-subscription, nothing was billed per token.
+baseline arms are unaffected.
 
 | Resource | Where |
 |---|---|
