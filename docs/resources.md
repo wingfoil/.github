@@ -11,6 +11,9 @@ by a person (`manual: true`), `init` scaffolds workflows the engine can guide, a
 configuration write raises the file's `version:`. Nothing breaks from 0.3.0; a project created by
 0.3.0 gets the guided workflows by copying them from a fresh `init`.
 
+[![M8ven Score](https://m8ven.ai/badge/mcp/wingfoil-wingfoil-1cpwbm?v=f42618dfa506b7e4d8d7093ce402c58e)](https://m8ven.ai/mcp/wingfoil/wingfoil)
+Listed on the M8ven Trust Index as a Verified Publisher.
+
 | Resource | Where |
 |---|---|
 | npm package `wingfoil` (latest: 0.3.1) | [npmjs.com/package/wingfoil](https://www.npmjs.com/package/wingfoil) |
@@ -20,7 +23,7 @@ configuration write raises the file's `version:`. Nothing breaks from 0.3.0; a p
 | CLI reference | [docs/cli-reference.md](https://github.com/wingfoil/wingfoil/blob/main/docs/cli-reference.md) |
 | Examples | [docs/examples/](https://github.com/wingfoil/wingfoil/tree/main/docs/examples) |
 | Release notes, and upgrading from 0.3.0 or 0.2.x | [CHANGELOG.md](https://github.com/wingfoil/wingfoil/blob/main/CHANGELOG.md) · [release v0.3.1](https://github.com/wingfoil/wingfoil/releases/tag/v0.3.1) · [release v0.3.0](https://github.com/wingfoil/wingfoil/releases/tag/v0.3.0) (test results and coverage attached) · [GitHub releases](https://github.com/wingfoil/wingfoil/releases) |
-| MCP server listings | [official MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers?search=wingfoil) (`io.github.wingfoil/wingfoil` 0.3.0) · [Glama](https://glama.ai/mcp/servers/wingfoil/wingfoil) · [AlternativeTo](https://alternativeto.net/software/wingfoil/) |
+| MCP server listings | [official MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers?search=wingfoil) (`io.github.wingfoil/wingfoil` 0.3.0) · [Glama](https://glama.ai/mcp/servers/wingfoil/wingfoil) · [AlternativeTo](https://alternativeto.net/software/wingfoil/) · [M8ven Trust Index](https://m8ven.ai/mcp/wingfoil/wingfoil) (Verified Publisher) |
 
 ## WingFoil UI
 
@@ -56,9 +59,9 @@ campaign, on its own page and never mixed with the Claude Code results. Prelimin
 ran once, S1 three times); its costs are API-equivalent, from a pinned price table.
 
 Codex execution `13fda3099afa/1`: WingFoil against its docs control and the baseline, on
-gpt-5.6-terra. **Erratum:** in 12 of the WingFoil arm's 27 steps, the turn after the approver's
-reply ran on Codex's default model instead of Terra (fixed). The WingFoil arm is being rerun; the
-baseline arms are unaffected.
+gpt-5.6-terra. **Erratum:** in 12 of the WingFoil arm's 27 steps the turn after the approver's
+reply ran on gpt-6.1-sol (bug-036, fixed by task-111); no rerun: the campaigns are preliminary,
+and the erratum's note stands. The baseline arms are unaffected.
 
 | Resource | Where |
 |---|---|
@@ -73,18 +76,27 @@ baseline arms are unaffected.
 
 ## WingFoil Templates
 
-Latest pack: **`base` 2.0.0**, the core of every project governed by WingFoil. Foundation: `base`
-published, `software` next. `base` works with WingFoil 0.3.0; no released WingFoil installs packs
-yet, so adopt it by hand, following the *Install and update* steps of its README.
+Published on 2026-10-28: **`base` 2.0.1**, **`software` 1.0.0** and **methodology/scrum 1.0.0**.
+`base` is the core of every project governed by WingFoil; `software` is the foundation layer for
+software projects, on top of `base`; methodology/scrum 1.0.0 is a Scrum methodology pack, built on
+base and software. Every published version works with WingFoil 0.3.0 to 0.3.1
+(`>=0.3.0 <=0.3.1`). No released WingFoil installs packs yet, so adopt them by hand, following the
+*Install and update* steps of each pack's README at its tag. There is no GitHub Release: the tags
+and the catalog are the publication.
 
-`base` 2.0.0 (major, 2026-10-27): new defaults for `plan_id` (`{workflow}-{phase}-plan`) and
-`retrospective_path` (`docs/retrospectives/`); `governance-evolution`'s `apply` produces
-`.wingfoil/`. Projects on 1.0.0: see the README's *Updating from 1.0.0*. `base` 1.0.0 stays listed.
+`base` 2.0.1 is a patch, README only: the adoption steps now remove the workflows `init`
+scaffolded under `custom/` that a composition replaces, plus a note on iterated retrospectives.
+From 2.0.0 there is nothing to recompose (*Updating from 2.0.0*). `base` 2.0.0 (major,
+2026-10-27) brought new defaults for `plan_id` (`{workflow}-{phase}-plan`) and
+`retrospective_path` (`docs/retrospectives/`); projects on 1.0.0: see the README's *Updating from
+1.0.0*. Earlier versions stay listed.
 
 | Resource | Where |
 |---|---|
-| Pack catalog (Foundation row, install steps) | [CATALOG.md](https://github.com/wingfoil/wingfoil-templates/blob/main/CATALOG.md#pack-base) |
-| `base` 2.0.0 | [README at the tag `base@2.0.0`](https://github.com/wingfoil/wingfoil-templates/blob/base@2.0.0/packs/base/README.md) (*Install and update*, *Updating from 1.0.0*) |
+| Pack catalog (Foundation and Methodology rows) | [CATALOG.md](https://github.com/wingfoil/wingfoil-templates/blob/main/CATALOG.md) |
+| `base` 2.0.1 | [README at the tag `base@2.0.1`](https://github.com/wingfoil/wingfoil-templates/blob/base@2.0.1/packs/base/README.md) (*Install and update*, *Updating from 2.0.0*) |
+| `software` 1.0.0 (requires `base` 2.x) | [README at the tag `software@1.0.0`](https://github.com/wingfoil/wingfoil-templates/blob/software@1.0.0/packs/software/README.md) |
+| methodology/scrum 1.0.0 (requires `base` 2.x and `software` 1.x) | [README at the tag `methodology/scrum@1.0.0`](https://github.com/wingfoil/wingfoil-templates/blob/methodology/scrum@1.0.0/packs/methodology/scrum/README.md) |
 | Search the catalog | [wingfoil.github.io/wingfoil-templates](https://wingfoil.github.io/wingfoil-templates/) (follows `main`) |
 | Pack format, for pack authors | [spec-001](https://github.com/wingfoil/wingfoil-templates/blob/main/docs/memory/tech-spec/spec-001-the-pack-format-manifest-fragments-composition-catalog-compatibility-and-digest.md) |
 
