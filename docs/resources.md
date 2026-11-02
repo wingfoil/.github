@@ -5,24 +5,29 @@ Everything the WingFoil projects have published for users, with where to find it
 
 ## WingFoil (CLI + MCP server)
 
-Latest release: **v0.3.1** (2026-10-27). `workflow adopt` counts an element created without
-`--workflow` as created by a step, `workflow rekey` follows a renamed phase, checks can be confirmed
-by a person (`manual: true`), `init` scaffolds workflows the engine can guide, and every
-configuration write raises the file's `version:`. Nothing breaks from 0.3.0; a project created by
-0.3.0 gets the guided workflows by copying them from a fresh `init`.
+Latest release: **v0.3.2** (2026-11-02), a patch of the 0.3 line, mostly fixes: clearer errors
+for configuration files that cannot be read or are malformed, `directives list` and
+`directive remove` that tell the truth about what is bound and committed, warnings `agent execute`
+used to drop, and `init` scaffolds that show the fields WingFoil's own records use. One small
+feature: commands that take an element id accept a short reference (`task-1`, or a unique prefix
+of the full id). Nothing needs migrating from 0.3.1; the CHANGELOG's *Upgrading from 0.3.1* lists
+the few inputs 0.3.2 now refuses or treats differently.
+
+Before it, **v0.3.1** (2026-10-27): `workflow adopt`, `workflow rekey`, checks confirmed by a
+person (`manual: true`), `init` scaffolds workflows the engine can guide.
 
 [![M8ven Score](https://m8ven.ai/badge/mcp/wingfoil-wingfoil-1cpwbm?v=f42618dfa506b7e4d8d7093ce402c58e)](https://m8ven.ai/mcp/wingfoil/wingfoil)
 Listed on the M8ven Trust Index as a Verified Publisher.
 
 | Resource | Where |
 |---|---|
-| npm package `wingfoil` (latest: 0.3.1) | [npmjs.com/package/wingfoil](https://www.npmjs.com/package/wingfoil) |
+| npm package `wingfoil` (latest: 0.3.2) | [npmjs.com/package/wingfoil](https://www.npmjs.com/package/wingfoil) |
 | Documentation site | [wingfoil.github.io/wingfoil](https://wingfoil.github.io/wingfoil/) |
 | README and quick start | [README](https://github.com/wingfoil/wingfoil#readme) |
 | User guide | [docs/user-guide.md](https://github.com/wingfoil/wingfoil/blob/main/docs/user-guide.md) |
 | CLI reference | [docs/cli-reference.md](https://github.com/wingfoil/wingfoil/blob/main/docs/cli-reference.md) |
 | Examples | [docs/examples/](https://github.com/wingfoil/wingfoil/tree/main/docs/examples) |
-| Release notes, and upgrading from 0.3.0 or 0.2.x | [CHANGELOG.md](https://github.com/wingfoil/wingfoil/blob/main/CHANGELOG.md) · [release v0.3.1](https://github.com/wingfoil/wingfoil/releases/tag/v0.3.1) · [release v0.3.0](https://github.com/wingfoil/wingfoil/releases/tag/v0.3.0) (test results and coverage attached) · [GitHub releases](https://github.com/wingfoil/wingfoil/releases) |
+| Release notes, and upgrading from 0.3.1, 0.3.0 or 0.2.x | [CHANGELOG.md](https://github.com/wingfoil/wingfoil/blob/main/CHANGELOG.md) · [release v0.3.2](https://github.com/wingfoil/wingfoil/releases/tag/v0.3.2) (test results attached) · [release v0.3.1](https://github.com/wingfoil/wingfoil/releases/tag/v0.3.1) · [release v0.3.0](https://github.com/wingfoil/wingfoil/releases/tag/v0.3.0) (test results and coverage attached) · [GitHub releases](https://github.com/wingfoil/wingfoil/releases) |
 | MCP server listings | [official MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers?search=wingfoil) (`io.github.wingfoil/wingfoil` 0.3.0) · [Glama](https://glama.ai/mcp/servers/wingfoil/wingfoil) · [AlternativeTo](https://alternativeto.net/software/wingfoil/) · [M8ven Trust Index](https://m8ven.ai/mcp/wingfoil/wingfoil) (Verified Publisher) |
 
 ## WingFoil UI
