@@ -63,8 +63,22 @@ gpt-5.6-terra. **Erratum:** in 12 of the WingFoil arm's 27 steps the turn after 
 reply ran on gpt-6.1-sol (bug-036, fixed by task-111); no rerun: the campaigns are preliminary,
 and the erratum's note stands. The baseline arms are unaffected.
 
+Codex execution `697e79b75e41/1`, under *Other agents*: WingFoil's workflow (step A) on
+WingFoil v0.3.1, against the baseline and its docs control, on gpt-5.6-terra and gpt-6-luna.
+Preliminary; its costs are API-equivalent; its comparison with `13fda3099afa/1` carries that
+execution's erratum.
+
+Claude Code execution `33b54dd89e8b/1`, under *Reference campaigns*: WingFoil's workflow (step A)
+on Sonnet 5.5 and Haiku 5.5; only the step-A arms ran. It includes the "gates and roles" scenario
+(S10). Preliminary; it runs on approver policy v5, so it is not compared with executions on
+policies v1 or v2.
+
+Content checks in these campaigns are lexical.
+
 | Resource | Where |
 |---|---|
+| Claude Code execution `33b54dd89e8b/1` (preliminary) | [execution page](https://wingfoil.github.io/wingfoil-benchmark/33b54dd89e8b/1/) |
+| Codex execution `697e79b75e41/1` (other agents, preliminary) | [execution page](https://wingfoil.github.io/wingfoil-benchmark/697e79b75e41/1/) |
 | Codex baseline, across agents (preliminary) | [results site, *Across agents*](https://wingfoil.github.io/wingfoil-benchmark/) |
 | Codex execution `13fda3099afa/1` (with its erratum) | [execution page](https://wingfoil.github.io/wingfoil-benchmark/13fda3099afa/1/) |
 | v0.2 results (preliminary) | [reference campaign, WingFoil v0.3.0](https://wingfoil.github.io/wingfoil-benchmark/81ebb2691f9c/1/) · [bridge campaign, WingFoil v0.2.2](https://wingfoil.github.io/wingfoil-benchmark/bf3a1ac7dff5/1/) · [all results](https://wingfoil.github.io/wingfoil-benchmark/) |
@@ -75,6 +89,10 @@ and the erratum's note stands. The baseline arms are unaffected.
 | Contest a setup | [issue form](https://github.com/wingfoil/wingfoil-benchmark/issues/new?template=contest-setup.yml) |
 
 ## WingFoil Templates
+
+Published on 2026-11-02: **methodology/kanban 1.0.0**, Kanban after the Kanban Guide (May 2025)
+as the delivery of software's life cycle — a continuous flow of work items pulled within WIP
+limits, carried by releases. It requires `base` 2.x and `software` 1.x.
 
 Published on 2026-10-28: **`base` 2.0.1**, **`software` 1.0.0** and **methodology/scrum 1.0.0**.
 `base` is the core of every project governed by WingFoil; `software` is the foundation layer for
@@ -97,6 +115,7 @@ From 2.0.0 there is nothing to recompose (*Updating from 2.0.0*). `base` 2.0.0 (
 | `base` 2.0.1 | [README at the tag `base@2.0.1`](https://github.com/wingfoil/wingfoil-templates/blob/base@2.0.1/packs/base/README.md) (*Install and update*, *Updating from 2.0.0*) |
 | `software` 1.0.0 (requires `base` 2.x) | [README at the tag `software@1.0.0`](https://github.com/wingfoil/wingfoil-templates/blob/software@1.0.0/packs/software/README.md) |
 | methodology/scrum 1.0.0 (requires `base` 2.x and `software` 1.x) | [README at the tag `methodology/scrum@1.0.0`](https://github.com/wingfoil/wingfoil-templates/blob/methodology/scrum@1.0.0/packs/methodology/scrum/README.md) |
+| methodology/kanban 1.0.0 (requires `base` 2.x and `software` 1.x) | [README at the tag `methodology/kanban@1.0.0`](https://github.com/wingfoil/wingfoil-templates/blob/methodology/kanban@1.0.0/packs/methodology/kanban/README.md) |
 | Search the catalog | [wingfoil.github.io/wingfoil-templates](https://wingfoil.github.io/wingfoil-templates/) (follows `main`) |
 | Pack format, for pack authors | [spec-001](https://github.com/wingfoil/wingfoil-templates/blob/main/docs/memory/tech-spec/spec-001-the-pack-format-manifest-fragments-composition-catalog-compatibility-and-digest.md) |
 
