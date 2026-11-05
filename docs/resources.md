@@ -102,10 +102,15 @@ limits, carried by releases. It requires `base` 2.x and `software` 1.x.
 Published on 2026-10-28: **`base` 2.0.1**, **`software` 1.0.0** and **methodology/scrum 1.0.0**.
 `base` is the core of every project governed by WingFoil; `software` is the foundation layer for
 software projects, on top of `base`; methodology/scrum 1.0.0 is a Scrum methodology pack, built on
-base and software. Every published version works with WingFoil 0.3.0 to 0.3.1
-(`>=0.3.0 <=0.3.1`). No released WingFoil installs packs yet, so adopt them by hand, following the
+base and software. Every published version works with WingFoil 0.3.0 to 0.3.2
+(`>=0.3.0 <=0.3.2`). No released WingFoil installs packs yet, so adopt them by hand, following the
 *Install and update* steps of each pack's README at its tag. There is no GitHub Release: the tags
 and the catalog are the publication.
+
+On WingFoil 0.3.2: `init` adds a few optional fields to its Memory templates (`contributor`,
+`credit`, `reported_by`; for `release` also `backlog_committed`, `waves` and a `## Scope changes`
+section) that the packs' templates do not carry yet. If you copy the composed templates over the
+ones `init` wrote, those optional fields are dropped; add them back by hand if you use them.
 
 `base` 2.0.1 is a patch, README only: the adoption steps now remove the workflows `init`
 scaffolded under `custom/` that a composition replaces, plus a note on iterated retrospectives.

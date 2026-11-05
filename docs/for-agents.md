@@ -22,9 +22,12 @@ What an AI agent should read to work with WingFoil projects.
 ## Pack catalog
 
 WingFoil Templates' published packs (latest: `base` 2.0.1, `software` 1.0.0, methodology/scrum
-1.0.0 and methodology/kanban 1.0.0, for WingFoil `>=0.3.0 <=0.3.1`). No released
+1.0.0 and methodology/kanban 1.0.0, for WingFoil `>=0.3.0 <=0.3.2`). No released
 WingFoil installs packs yet: an agent adopts a pack by hand, following the *Install and update*
-steps of the pack's README at its tag.
+steps of the pack's README at its tag. On WingFoil 0.3.2, the packs' Memory templates lack the
+optional fields `init` adds (`contributor`, `credit`, `reported_by`; for `release` also
+`backlog_committed`, `waves`, `## Scope changes`): keep them by hand when copying the composed
+templates over `init`'s.
 
 - **Machine-readable index:** [catalog-index.json](https://raw.githubusercontent.com/wingfoil/wingfoil-templates/main/catalog-index.json)
 - **Agent entry point:** [llms.txt](https://raw.githubusercontent.com/wingfoil/wingfoil-templates/main/llms.txt)
